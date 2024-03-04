@@ -29,111 +29,117 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.idiomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.catalàToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.anglèsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.japonèsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.originalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tibetàToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            menuStrip1 = new MenuStrip();
+            idiomaToolStripMenuItem = new ToolStripMenuItem();
+            catalàToolStripMenuItem = new ToolStripMenuItem();
+            anglèsToolStripMenuItem = new ToolStripMenuItem();
+            japonèsToolStripMenuItem = new ToolStripMenuItem();
+            originalToolStripMenuItem = new ToolStripMenuItem();
+            tibetàToolStripMenuItem = new ToolStripMenuItem();
+            editarToolStripMenuItem = new ToolStripMenuItem();
+            vistaToolStripMenuItem = new ToolStripMenuItem();
+            ajudaToolStripMenuItem = new ToolStripMenuItem();
+            ajudaToolStripMenuItem1 = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
             // 
             // label1
             // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.Name = "label1";
+            resources.ApplyResources(label1, "label1");
+            label1.Name = "label1";
             // 
             // label2
             // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
+            resources.ApplyResources(label2, "label2");
+            label2.Name = "label2";
             // 
             // label3
             // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            label3.Click += label3_Click;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.idiomaToolStripMenuItem,
-            this.editarToolStripMenuItem,
-            this.vistaToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
+            resources.ApplyResources(menuStrip1, "menuStrip1");
+            menuStrip1.Items.AddRange(new ToolStripItem[] { idiomaToolStripMenuItem, editarToolStripMenuItem, vistaToolStripMenuItem, ajudaToolStripMenuItem });
+            menuStrip1.Name = "menuStrip1";
             // 
             // idiomaToolStripMenuItem
             // 
-            this.idiomaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.catalàToolStripMenuItem,
-            this.anglèsToolStripMenuItem,
-            this.japonèsToolStripMenuItem,
-            this.originalToolStripMenuItem,
-            this.tibetàToolStripMenuItem});
-            this.idiomaToolStripMenuItem.Name = "idiomaToolStripMenuItem";
-            resources.ApplyResources(this.idiomaToolStripMenuItem, "idiomaToolStripMenuItem");
+            resources.ApplyResources(idiomaToolStripMenuItem, "idiomaToolStripMenuItem");
+            idiomaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { catalàToolStripMenuItem, anglèsToolStripMenuItem, japonèsToolStripMenuItem, originalToolStripMenuItem, tibetàToolStripMenuItem });
+            idiomaToolStripMenuItem.Name = "idiomaToolStripMenuItem";
             // 
             // catalàToolStripMenuItem
             // 
-            this.catalàToolStripMenuItem.Name = "catalàToolStripMenuItem";
-            resources.ApplyResources(this.catalàToolStripMenuItem, "catalàToolStripMenuItem");
-            this.catalàToolStripMenuItem.Click += new System.EventHandler(this.catalàToolStripMenuItem_Click);
+            resources.ApplyResources(catalàToolStripMenuItem, "catalàToolStripMenuItem");
+            catalàToolStripMenuItem.Name = "catalàToolStripMenuItem";
+            catalàToolStripMenuItem.Click += catalàToolStripMenuItem_Click;
             // 
             // anglèsToolStripMenuItem
             // 
-            this.anglèsToolStripMenuItem.Name = "anglèsToolStripMenuItem";
-            resources.ApplyResources(this.anglèsToolStripMenuItem, "anglèsToolStripMenuItem");
-            this.anglèsToolStripMenuItem.Click += new System.EventHandler(this.anglèsToolStripMenuItem_Click);
+            resources.ApplyResources(anglèsToolStripMenuItem, "anglèsToolStripMenuItem");
+            anglèsToolStripMenuItem.Name = "anglèsToolStripMenuItem";
+            anglèsToolStripMenuItem.Click += anglèsToolStripMenuItem_Click;
             // 
             // japonèsToolStripMenuItem
             // 
-            this.japonèsToolStripMenuItem.Name = "japonèsToolStripMenuItem";
-            resources.ApplyResources(this.japonèsToolStripMenuItem, "japonèsToolStripMenuItem");
-            this.japonèsToolStripMenuItem.Click += new System.EventHandler(this.japonèsToolStripMenuItem_Click);
+            resources.ApplyResources(japonèsToolStripMenuItem, "japonèsToolStripMenuItem");
+            japonèsToolStripMenuItem.Name = "japonèsToolStripMenuItem";
+            japonèsToolStripMenuItem.Click += japonèsToolStripMenuItem_Click;
             // 
             // originalToolStripMenuItem
             // 
-            this.originalToolStripMenuItem.Name = "originalToolStripMenuItem";
-            resources.ApplyResources(this.originalToolStripMenuItem, "originalToolStripMenuItem");
-            this.originalToolStripMenuItem.Click += new System.EventHandler(this.originalToolStripMenuItem_Click);
-            // 
-            // editarToolStripMenuItem
-            // 
-            this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            resources.ApplyResources(this.editarToolStripMenuItem, "editarToolStripMenuItem");
-            // 
-            // vistaToolStripMenuItem
-            // 
-            this.vistaToolStripMenuItem.Name = "vistaToolStripMenuItem";
-            resources.ApplyResources(this.vistaToolStripMenuItem, "vistaToolStripMenuItem");
+            resources.ApplyResources(originalToolStripMenuItem, "originalToolStripMenuItem");
+            originalToolStripMenuItem.Name = "originalToolStripMenuItem";
+            originalToolStripMenuItem.Click += originalToolStripMenuItem_Click;
             // 
             // tibetàToolStripMenuItem
             // 
-            this.tibetàToolStripMenuItem.Name = "tibetàToolStripMenuItem";
-            resources.ApplyResources(this.tibetàToolStripMenuItem, "tibetàToolStripMenuItem");
-            this.tibetàToolStripMenuItem.Click += new System.EventHandler(this.tibetàToolStripMenuItem_Click);
+            resources.ApplyResources(tibetàToolStripMenuItem, "tibetàToolStripMenuItem");
+            tibetàToolStripMenuItem.Name = "tibetàToolStripMenuItem";
+            tibetàToolStripMenuItem.Click += tibetàToolStripMenuItem_Click;
+            // 
+            // editarToolStripMenuItem
+            // 
+            resources.ApplyResources(editarToolStripMenuItem, "editarToolStripMenuItem");
+            editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            // 
+            // vistaToolStripMenuItem
+            // 
+            resources.ApplyResources(vistaToolStripMenuItem, "vistaToolStripMenuItem");
+            vistaToolStripMenuItem.Name = "vistaToolStripMenuItem";
+            // 
+            // ajudaToolStripMenuItem
+            // 
+            resources.ApplyResources(ajudaToolStripMenuItem, "ajudaToolStripMenuItem");
+            ajudaToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { ajudaToolStripMenuItem1 });
+            ajudaToolStripMenuItem.Name = "ajudaToolStripMenuItem";
+            // 
+            // ajudaToolStripMenuItem1
+            // 
+            resources.ApplyResources(ajudaToolStripMenuItem1, "ajudaToolStripMenuItem1");
+            ajudaToolStripMenuItem1.Name = "ajudaToolStripMenuItem1";
+            ajudaToolStripMenuItem1.Click += ajudaToolStripMenuItem1_Click;
             // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "Form1";
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -150,5 +156,7 @@
         private ToolStripMenuItem tibetàToolStripMenuItem;
         private ToolStripMenuItem editarToolStripMenuItem;
         private ToolStripMenuItem vistaToolStripMenuItem;
+        private ToolStripMenuItem ajudaToolStripMenuItem;
+        private ToolStripMenuItem ajudaToolStripMenuItem1;
     }
 }

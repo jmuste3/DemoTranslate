@@ -22,7 +22,7 @@ namespace DemoTranslate
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("ca-ES");
             // demo recurs addicional
             string prova = "missatge de prova";
-            
+
             //Recarregar el formulari
 
             this.Hide();
@@ -37,7 +37,7 @@ namespace DemoTranslate
             //Recarregar el formulari
             this.Hide();
             Form1 f1 = new Form1();
-            f1.Show(); 
+            f1.Show();
         }
 
         private void japonèsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,6 +66,16 @@ namespace DemoTranslate
             this.Hide();
             Form1 f1 = new Form1();
             f1.Show();
+        }
+
+        private void ajudaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
