@@ -1,10 +1,16 @@
 using System.Globalization;
 using System.Windows.Forms;
+using System.Resources;
 
 namespace DemoTranslate
 {
     public partial class Form1 : Form
     {
+
+        //preparar recursos
+        ResourceManager rm = new ResourceManager("DemoTranslate.Form1", typeof(Program).Assembly);
+        
+
         //***
         public Form1()
         {
@@ -13,7 +19,7 @@ namespace DemoTranslate
             //bool no_verificar = true;
             //combobox3.selectedindex=1;
             //no_verificar = false;
-        }
+                    }
         // 
 
         // if no_verificar == true; exit;
@@ -22,7 +28,7 @@ namespace DemoTranslate
             Thread.CurrentThread.CurrentUICulture = new CultureInfo("ca-ES");
             // demo recurs addicional
             string prova = "missatge de prova";
-            
+
             //Recarregar el formulari
 
             this.Hide();
@@ -37,7 +43,7 @@ namespace DemoTranslate
             //Recarregar el formulari
             this.Hide();
             Form1 f1 = new Form1();
-            f1.Show(); 
+            f1.Show();
         }
 
         private void japonèsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -66,6 +72,16 @@ namespace DemoTranslate
             this.Hide();
             Form1 f1 = new Form1();
             f1.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //no utilitzar string si volem traduïr
+            //MessageBox.Show("MISSATGE D'ERROR");
+
+            //recuperar string traduit dels recursos
+            string txtmsgbox = rm.GetString("titol_msgbox");
+            MessageBox.Show(txtmsgbox);
         }
     }
 }
